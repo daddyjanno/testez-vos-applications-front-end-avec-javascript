@@ -6,9 +6,9 @@ const SignIn = {
                     <h1 class="main-title">Façadia</h1>
                     <form class="sign-in-form" action="#" method="POST">
                         <h2 data-testid="sign-in-form-title" class="form-title">Veuillez vous connecter</h2>
-                        
+
                         <div class="form-group">
-                            <label for="user-email">Votre addresse e-mail</label>
+                            <label for="user-email">Votre adresse e-mail</label>
                             <input name="user-email" id="user-email" type="email" placeholder="email@example.com">
                             <span data-testid="user-email-error-msg" class="form-text-error hidden user-email-error-msg">L'e-mail n'est pas correct</span>
                         </div>
