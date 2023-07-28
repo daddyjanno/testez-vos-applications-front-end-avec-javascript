@@ -2,7 +2,7 @@ module.exports = {
   test: client => {
     client
       .url("http://127.0.0.1:5500/")
-      .waitForElementVisible('.sign-in-page', 10 * 1000)
+      .waitForElementVisible('.main-title', 10 * 1000)
       .assert.visible('input[type=email]')
       .setValue('input[type=email]', 'thomas@facadia.com')
       .assert.visible('input[type=password]')
