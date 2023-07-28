@@ -10,5 +10,12 @@ module.exports = {
       .assert.visible('button[type=submit]')
       .click('button[type=submit]')
       .waitForElementVisible(".home-page-main")
+      .assert.visible(".section-title")
+      .assert.textContains(".section-title", "Vos capteurs")
+      .assert.visible(".sensor-info-btn")
+      .click(".sensor-info-btn")
+      .waitForElementVisible(".section-title")
+      .assert.visible(".section-title")
+      .assert.textContains(".section-title", "Détails du capteur #7")
   }
 }
